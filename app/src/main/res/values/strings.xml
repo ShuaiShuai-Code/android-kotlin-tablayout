@@ -1,0 +1,686 @@
+<resources>
+    <string name="app_name">蜂博士</string>
+    <string name="app_path">/fboshi/</string>
+    <string name="app_path_img">/fboshi/img/</string>
+    <string name="app_path_image_temp">/fboshi/temp/</string>
+    <string name="app_path_video">/fboshi/video/</string>
+    <string name="app_path_db">/data/data/com.fenboshi.fboshi/databases/</string>
+
+    <string name="l_album_name_all">最近图片</string>
+    <string name="l_album_name_selected">选择图片</string>
+    <string name="l_album_name_camera">相机</string>
+    <string name="l_album_name_download">下载</string>
+    <string name="l_album_name_screen_shot">屏幕截图</string>
+
+    <string name="l_confirm_dialog_title">提示</string>
+    <string name="l_confirm_dialog_message">您确定要放弃本次选择的图片吗?</string>
+
+    <string name="lession">养蜂课程</string>
+    <string name="delete_success">已删除</string>
+    <string name="all">全部</string>
+    <string name="again">重播</string>
+    <string name="count">个</string>
+    <string name="protocol">用户协议</string>
+    <string name="about">关于</string>
+    <string name="knowledge">问题</string>
+    <string name="ask">提问</string>
+    <string name="chat">聊天</string>
+    <string name="edit">编辑</string>
+    <string name="delete">删除</string>
+    <string name="delete_01">删除(</string>
+    <string name="delete_02">)</string>
+    <string name="expert">专家</string>
+    <string name="changing_over">切换</string>
+    <string name="notice">消息</string>
+    <string name="advise">通知</string>
+    <string name="sure">确定</string>
+    <string name="known">知道了</string>
+    <string name="save">保存</string>
+    <string name="message_detail">详细信息</string>
+    <string name="save_img">保存图片</string>
+    <string name="reply">回复</string>
+    <string name="cancel">取消</string>
+    <string name="attention">关注</string>
+    <string name="attention_ed">已关注</string>
+    <string name="send">发表</string>
+    <string name="comment">评论</string>
+    <string name="answer">解答</string>
+    <string name="zan">赞</string>
+    <string name="login">登录</string>
+    <string name="loading">加载中&#8230;</string>
+    <string name="tv_header_image_number">$t_number$/$m_number$</string>
+    <string name="txt_btn_guide">立即体验</string>
+
+    <!-- the welcome text -->
+    <string name="text_welcome_http_01">Copyright</string>
+    <string name="text_welcome_http_02">hibeeok.com</string>
+
+
+    <!-- the download video text -->
+    <string name="label_notification_pro">进度显示</string>
+    <string name="label_notification_finish">下载成功</string>
+    <string name="dialog_del_photo_message">确认要删除该图片吗？</string>
+
+    <!-- the pulltorefreshview text -->
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">正在加载中\u2026</string>
+    <string name="xlistview_footer">点击查看更多</string>
+    <string name="title_activity_person_note">PersonNoteActivity</string>
+    <string name="err_no_data">没有数据！</string>
+    <string name="err_not_netlink">网络连接不可用！</string>
+    <string name="pull_to_refresh_pull_label" translatable="false">下拉刷新</string>
+    <string name="pull_to_refresh_release_label" translatable="false">释放刷新</string>
+    <string name="pull_to_refresh_refreshing_label" translatable="false">正在刷新&#8230;</string>
+    <string name="pull_to_refresh_tap_label" translatable="false">点击刷新</string>
+    <string name="layout_unload">网络不给力，请检查网络设置</string>
+    <string name="toast_video_un">该资源不存在！</string>
+    <string name="layout_unload_reload">重试</string>
+
+    <!-- the dilog text -->
+    <string name="dialog_check_login">该操作需要登录之后才能进行，是否需要登录?</string>
+
+    <!-- main -->
+    <string name="txt_main_bottom_01">问问</string>
+    <string name="txt_main_bottom_02">学学</string>
+    <string name="txt_main_bottom_03">看看</string>
+    <string name="txt_main_bottom_04">我的</string>
+    <string name="txt_main_bottom_05">聊聊</string>
+
+    <!-- login -->
+    <string name="txt_login_get_message">获取验证码</string>
+    <string name="txt_login_get_message_02">重新获取验证码</string>
+    <string name="txt_login_get_message_code_01">验证码已发送，</string>
+    <string name="txt_login_get_message_code_02">s 后重新获取</string>
+    <string name="txt_login_get_message_pwd">账号密码登录</string>
+    <string name="txt_login_get_message_protocol_01">登录/注册代表您已阅读并同意</string>
+    <string name="txt_login_get_message_protocol_02">《蜂博士用户协议》</string>
+    <string name="txt_login_get_message_hint">验证即登录，未注册则自动创建新账号</string>
+    <string name="txt_login_get_message_title">短信快捷登录</string>
+    <string name="edit_login_phone_hint">请输入手机号</string>
+    <string name="edit_login_pwd_hint">请输入密码</string>
+    <string name="txt_login_pwd">登录蜂博士</string>
+    <string name="txt_login_register">快速注册</string>
+    <string name="txt_login_fast">短信快捷登录</string>
+    <string name="txt_login_fast_title">快速注册</string>
+    <string name="txt_login_fast_pwd_01">已有蜂博士账号</string>
+    <string name="txt_login_fast_pwd_02">去登录</string>
+    <string name="txt_login_forget">忘记密码</string>
+    <string name="txt_login_forget_title">找回密码</string>
+    <string name="txt_login_forget_set_title">设置新密码</string>
+    <string name="txt_login_forget_set">设置新密码(6-20位)</string>
+    <string name="txt_login_forget_set_pwd_00">请输入原密码</string>
+    <string name="txt_login_forget_set_pwd_01">请输入新密码(6-20位)</string>
+    <string name="txt_login_forget_set_pwd_02">再次输入新密码</string>
+
+    <!-- watch -->
+    <string name="txt_watch_title">蜂业头条</string>
+    <string name="txt_watch_province_title">当前选择</string>
+    <string name="txt_watch_menu">各地蜂情</string>
+    <string name="txt_watch_menu_append">蜂情</string>
+    <string name="txt_watch_menu_left">当前选择：</string>
+    <string name="txt_watch_province_text_01">您当前的位置</string>
+    <string name="txt_watch_province_text_02">各地</string>
+    <string name="txt_watch_province_text_03">正在定位...</string>
+    <string name="txt_watch_province_text_04">抱歉，未定位到</string>
+    <!-- share -->
+    <string name="tv_share">分享到</string>
+    <string name="tv_share_qq_f">QQ</string>
+    <string name="tv_share_qq_q">QQ空间</string>
+    <string name="tv_share_wechat_f">微信</string>
+    <string name="tv_share_wechat_q">朋友圈</string>
+
+    <!-- learn -->
+    <string name="txt_learn_list_class">课时</string>
+    <string name="txt_learn_list_01">音频(</string>
+    <string name="txt_learn_list_02">视频(</string>
+    <string name="txt_learn_list_03">)</string>
+    <string name="txt_learn_detail_header_right">课时列表</string>
+    <string name="txt_learn_detail_start">语音播放</string>
+    <string name="txt_learn_detail_stop">播放中...</string>
+    <string name="txt_learn_comment_un">没有评论，等你来回答</string>
+    <string name="txt_learn_comment_hint">我来说两句...</string>
+    <string name="txt_change_over_title">切换养蜂级别</string>
+    <string name="txt_change_over_hint">同步更改个人资料信息</string>
+
+    <string name="txt_video_error_hint_01">网络不给力，请检查网络设置</string>
+    <string name="txt_video_error_hint_02">您正在使用非WiFi环境，播放需要使用流量费</string>
+    <string name="txt_video_error_button">继续播放</string>
+    <!-- ask -->
+    <string name="txt_fra_ask_tab_01">最新</string>
+    <string name="txt_fra_ask_tab_02">待回复</string>
+    <string name="txt_fra_ask_tab_03">问专家</string>
+    <string name="txt_fra_ask_search">搜索问题/专家</string>
+
+    <string name="txt_ask_hint">请输入问题...</string>
+    <string name="txt_ask_close_hint">确定取消编辑吗?</string>
+    <string name="txt_ask_expert_invite">已邀请专家</string>
+    <string name="txt_ask_left_type">问题类型</string>
+    <string name="txt_ask_left_type_01">交流分享</string>
+
+    <string name="txt_ask_left_expert">邀请专家</string>
+    <string name="txt_ask_left_change">问题转移</string>
+    <string name="txt_ask_type_content">请选择问题类型</string>
+
+
+    <!-- expert -->
+    <string name="txt_expert_adapter_count">个回答</string>
+    <string name="txt_expert_zan_01">解答被赞</string>
+    <string name="txt_expert_zan_02">次</string>
+
+    <string name="txt_expert_type_09">企业专家</string>
+    <string name="txt_expert_type_10">教研专家</string>
+    <string name="txt_expert_type_11">民间专家</string>
+
+    <string name="txt_expert_tab_01">解答</string>
+    <string name="txt_expert_tab_01_2">问答</string>
+    <string name="txt_expert_tab_02">关注</string>
+    <string name="txt_expert_tab_03">粉丝</string>
+    <string name="txt_expert_introduce_01">个人简介</string>
+    <string name="txt_expert_introduce_02">详细资料</string>
+    <string name="txt_expert_next_01">解答</string>
+    <string name="txt_expert_next_02">提问</string>
+    <string name="txt_expert_favorite">邀请已关注专家解答问题</string>
+    <string name="txt_expert_change">转移问题给已关注的专家</string>
+
+    <string name="txt_expert_message_01">单位</string>
+    <string name="txt_expert_message_02">职称</string>
+    <string name="txt_expert_message_03">简介</string>
+    <string name="txt_expert_message_04">暂无</string>
+
+    <!-- mine -->
+    <string name="txt_mine_un_login_01">点击登录</string>
+    <string name="txt_mine_un_login_02">登录后体验更多功能</string>
+    <string name="txt_mine_tab_01">学习历史</string>
+    <string name="txt_mine_tab_02">我的收藏</string>
+    <string name="txt_mine_tab_03">我的通知</string>
+    <string name="txt_mine_tab_04">设置</string>
+    <string name="txt_mine_user_name">用户名:</string>
+    <string name="txt_prompt_adapter_01">回复了</string>
+    <string name="txt_prompt_adapter_02">邀请你回答</string>
+    <string name="txt_prompt_adapter_03">推荐了你的解答</string>
+    <string name="txt_prompt_adapter_04">推荐你回答</string>
+    <string name="txt_prompt_adapter_05">转移了</string>
+
+    <string name="txt_mine_focused_01">我的关注</string>
+    <string name="txt_mine_focused_02">我的粉丝</string>
+    <string name="txt_mine_focused_03">Ta的关注</string>
+    <string name="txt_mine_focused_04">Ta的粉丝</string>
+
+    <!-- setting -->
+    <string name="txt_setting_tab_01">账号安全</string>
+    <string name="txt_setting_tab_02">关于蜂博士</string>
+    <string name="txt_setting_tab_03">推荐给好友</string>
+    <string name="txt_setting_tab_04">邀请专家加入蜂博士</string>
+    <string name="txt_setting_tab_05">检查更新</string>
+    <string name="txt_setting_tab_06">退出登录</string>
+
+    <string name="txt_setting_about_01">QQ交流群</string>
+    <string name="txt_setting_about_02">联系电话</string>
+    <string name="txt_setting_about_03"> 2018 蜂博士版权所有</string>
+    <string name="txt_setting_about_04">蜂博士用户协议</string>
+    <string name="txt_setting_set_pwd">设置密码</string>
+    <string name="txt_setting_set_pwd_hint_01">请输入原密码</string>
+    <string name="txt_setting_set_pwd_hint_02">请输入新密码</string>
+    <string name="txt_setting_set_pwd_hint_03">请确认新密码</string>
+    <string name="txt_setting_set_pwd_hint_04">新密码输入不一致</string>
+    <string name="txt_setting_set_pwd_hint_05">密码长度应该在6-20位字符之间</string>
+    <string name="txt_setting_exit_hint">确定退出登录？</string>
+
+
+
+
+    <string name="dialog_update_version_title">发现新版本V$number$</string>
+    <string name="label_notification_apk_title">蜂博士新版本下载中……</string>
+    <string name="dialog_update_version_cancel">暂不更新</string>
+    <string name="dialog_update_version_sure">立即升级</string>
+
+
+    <!-- edit -->
+    <string name="text_edit_title">编辑资料</string>
+    <string name="text_edit_01">头像</string>
+    <string name="text_edit_02">用户名</string>
+    <string name="text_edit_03">名字</string>
+    <string name="text_edit_04">性别</string>
+    <string name="text_edit_05">生日</string>
+    <string name="text_edit_06">所在地</string>
+    <string name="text_edit_07">简介</string>
+    <string name="text_edit_08">注册时间</string>
+    <string name="text_edit_09">养蜂等级</string>
+    <string name="text_edit_10">级别</string>
+    <string name="text_edit_11">擅长</string>
+    <string name="text_edit_12">单位</string>
+    <string name="text_edit_13">职称</string>
+
+    <string name="text_edit_null_01">请选择</string>
+    <string name="text_edit_null_02">请填写</string>
+    <string name="text_edit_title_01">设置名字</string>
+    <string name="text_edit_title_02">设置简介</string>
+    <string name="text_edit_title_03">设置工作单位</string>
+    <string name="text_edit_title_04">设置职称</string>
+    <string name="text_edit_title_05">添加擅长领域</string>
+
+    <string name="text_edit_skill_01">所有领域  已选择</string>
+    <string name="text_edit_skill_02">擅长领域</string>
+
+    <!-- share -->
+    <string name="share_title_01">一起加入蜂博士</string>
+    <string name="share_text_01">我在用蜂博士，这里是各类蜂农和专家的聚集地，品质还真不错，推荐你试试</string>
+    <string name="share_hint_01">把蜂博士推荐给好友</string>
+    <string name="share_title_02">你已经达到了蜂博士专家级别</string>
+    <string name="share_text_02">我在用蜂博士，推荐你成为认证专家，请完善资料，提交给蜂博士</string>
+    <string name="share_hint_02">邀请专家加入蜂博士</string>
+
+    <!-- hint -->
+    <string name="hint_ask_has_null_01">暂无解答记录</string>
+    <string name="hint_ask_has_null_02">暂无提问记录</string>
+    <string name="hint_apply_has_null">暂时没有未回复的问题</string>
+    <string name="hint_name_has_null">请输入名字</string>
+    <string name="hint_delete">已删除</string>
+    <string name="hint_delete_02"> 抱歉，该内容已被删除</string>
+    <string name="hint_login_pwd_title">登录失败</string>
+
+    <!--RTS白板-->
+    <string name="start_session">正在邀请对方，请稍后</string>
+    <string name="callee_reject">对方拒绝了本次请求</string>
+    <string name="callee_ack_timeout">对方未接受请求</string>
+    <string name="receive_session">对方发起白板演示</string>
+    <string name="start_session_record">我发起了白板演示</string>
+    <string name="session_end_record">白板演示已结束</string>
+    <string name="end_session_tip_head">退出白板演示</string>
+    <string name="end_session_tip_content">退出后，你将不再接收白板演示的消息内容</string>
+    <string name="target_has_end_session">对方结束白板演示</string>
+    <string name="accept_session">接受</string>
+    <string name="reject_session">拒绝</string>
+    <string name="doodle_back">上一步</string>
+    <string name="doodle_clear">清屏</string>
+
+    <!-- session -->
+    <string name="input_panel_guess">猜 拳</string>
+    <string name="input_panel_audio_call">语音通话</string>
+    <string name="input_panel_video_call">视频通话</string>
+    <string name="input_panel_file">发送文件</string>
+    <string name="input_panel_RTS">白 板</string>
+    <string name="input_panel_snapchat">阅后即焚</string>
+    <string name="input_panel_tip">Tip</string>
+    <string name="input_panel_ack_msg">已读回执</string>
+    <string name="message_history_query">云消息记录</string>
+    <string name="message_clear">清空本地消息记录</string>
+    <string name="message_info">聊天信息</string>
+
+    <!-- 群 -->
+    <string name="add_buddy">添加好友</string>
+    <string name="create_normal_team">创建讨论组</string>
+    <string name="team_apply_sending">发送中…</string>
+    <string name="no_team">您还没有群</string>
+    <string name="no_normal_team">您还没有讨论组</string>
+    <string name="team_search_hint">请输入群号进行搜索</string>
+    <string name="team_number_not_exist">群号不存在</string>
+    <string name="team_join">加入群组</string>
+    <string name="team_join_success">成功加入群: %1$s</string>
+    <string name="team_apply_to_join_send_success">申请已发出</string>
+    <string name="has_exist_in_team">已经在群里</string>
+    <string name="team_num_limit">群数量已达上限</string>
+    <string name="msg_notice">消息提醒</string>
+
+    <!-- 通讯录 -->
+    <string name="add_friend">加为好友</string>
+    <string name="remove_friend">删除好友</string>
+    <string name="begin_chat">聊天</string>
+    <string name="remove_friend_tip">删除好友后，将同时解除双方的好友关系</string>
+    <string name="remove_friend_success">删除好友成功</string>
+    <string name="add_friend_self_tip">不能添加自己为好友</string>
+    <string name="add_friend_verify_tip">好友验证请求</string>
+    <string name="black_list_tip">你不会接收到列表中联系人的任何消息</string>
+
+    <string name="user_profile">聊天信息</string>
+
+    <!-- 个人名片 -->
+    <string name="birthday">生 日</string>
+    <string name="phone">手 机</string>
+    <string name="email">邮 箱</string>
+    <string name="signature">签 名</string>
+    <string name="alias">备注名</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="other">其他</string>
+    <string name="phone_number">手机号码</string>
+    <string name="gender">性 别</string>
+    <string name="nickname">昵 称</string>
+    <string name="user_info_update_failed">设置失败，请重试</string>
+    <string name="nickname_empty">昵称不能为空</string>
+    <string name="user_info_update_success">设置成功</string>
+    <string name="black_list">黑名单</string>
+    <string name="recent_sticky">消息置顶</string>
+    <!--机器人-->
+    <string name="nim_robot_title">云小信机器人</string>
+    <string name="robot_start_chat">开始对话</string>
+    <!-- 已读回执 -->
+    <string name="send_ack_msg">发送已读回执消息</string>
+    <string name="ack_msg_info">消息已读详情</string>
+    <string name="ack_msg_tip">已读回执能力支持文本、图片、音频、视频、文件、自定义等消息类型。此处仅以文本消息作为演示，开发者可以根据具体业务场景进行功能设计。</string>
+    <!-- 阅后即焚 -->
+    <string name="snapchat_longclick_to_view">按住查看</string>
+    <string name="main_tab_session">会话</string>
+    <string name="main_tab_contact">通讯录</string>
+    <string name="multiport_manager">多端登录管理</string>
+    <string name="computer_version">云信电脑版</string>
+    <string name="web_version">云信网页版</string>
+    <string name="mobile_version">云信移动版</string>
+    <string name="multiport_logout">下线</string>
+
+    <!-- 多端在线类型 -->
+    <string name="on_line">在线</string>
+    <string name="on_line_pc">PC在线</string>
+    <string name="on_line_mac">Mac在线</string>
+    <string name="on_line_web">web在线</string>
+    <string name="client_aos">Android</string>
+    <string name="client_ios">iOS</string>
+    <string name="on_line_busy">忙碌</string>
+    <string name="off_line">离线</string>
+
+    <string name="net_broken">当前网络不可用</string>
+    <string name="nim_status_unlogin">未登录</string>
+    <string name="nim_status_connecting">连接中...</string>
+    <string name="nim_status_logining">登录中...</string>
+    <string name="multiport_logging">正在使用</string>
+    <string name="login_failed">帐号或密码错误</string>
+
+    <!-- 云信SDK所需文案 -->
+    <string name="nim_status_bar_multi_messages_incoming">%1$d位联系人有新消息</string>
+    <string name="nim_status_bar_ticker_text">%1$s有新消息</string>
+    <string name="nim_status_bar_image_message">%1$s发来一条图片消息</string>
+    <string name="nim_status_bar_audio_message">%1$s发来一条语音消息</string>
+    <string name="nim_status_bar_video_message">%1$s发来一条视频消息</string>
+    <string name="nim_status_bar_file_message">%1$s发来一条文件消息</string>
+    <string name="nim_status_bar_location_message">%1$s分享了一个地理位置</string>
+    <string name="nim_status_bar_notification_message">%1$s: 通知消息</string>
+    <string name="nim_status_bar_custom_message">%1$s: 自定义消息</string>
+    <string name="nim_status_bar_unsupported_message">%1$s: 无法显示该内容</string>
+    <string name="nim_status_bar_hidden_msg_content">你收到一条新消息</string>
+    <string name="prepare_data">正在准备数据...</string>
+
+    <string name="mine_scan_01">发起聊天</string>
+    <string name="mine_scan_02">发现群</string>
+    <string name="add_into_group">加入群</string>
+    <string name="add_new_group">新建群</string>
+
+    <string name="edit_hint_create_group_01">群名称</string>
+    <string name="edit_hint_create_group_02">群介绍(群用途说明)</string>
+    <string name="edit_hint_create_group_03">群规则(不填写默认使用基础群规)</string>
+    <string name="tv_create_group_01">查看基础群规</string>
+    <string name="tv_create_group_02">同意</string>
+    <string name="tv_create_group_03">建群协议</string>
+    <string name="tv_create_group_submit">提交审核</string>
+    <string name="title_group_hint_01">基础群规</string>
+    <string name="title_group_hint_02">建群协议</string>
+    <string name="txt_create_group_close_hint">确定取消建群吗？</string>
+    <string name="txt_create_group_success_01">创建群申请已提交</string>
+    <string name="txt_create_group_success_02">请等候蜂博士团队审核</string>
+    <string name="txt_create_group_success_03">好的</string>
+
+    <!-- common -->
+    <string name="empty"></string>
+    <string name="ok">确定</string>
+    <string name="clear_empty">清空</string>
+    <string name="iknow">知道了</string>
+    <string name="search">搜索</string>
+    <string name="remove">移除</string>
+    <string name="add">添加</string>
+    <string name="add_02">邀请</string>
+    <string name="create">新建</string>
+    <string name="without_content">暂无</string>
+    <string name="network_is_not_available">网络连接失败，请检查你的网络设置</string>
+    <string name="open">开启</string>
+    <string name="close">关闭</string>
+    <string name="menu">菜单</string>
+    <string name="now_allow_space">不能含有空格</string>
+    <string name="readed">已读</string>
+    <string name="unread">未读</string>
+    <!-- session -->
+    <string name="input_panel_photo">图 片</string>
+    <string name="input_panel_video">视 频</string>
+    <string name="input_panel_location">位 置</string>
+    <string name="input_panel_take">拍 摄</string>
+    <string name="im_choose_pic">请选择JPG PNG BMP GIF格式的图片文件</string>
+    <string name="repeat_download_message">重新下载?</string>
+    <string name="repeat_send_has_blank">重 发</string>
+    <string name="repeat_send_message">重发消息?</string>
+    <string name="copy_has_blank">复 制</string>
+    <string name="delete_has_blank">删 除</string>
+    <string name="voice_to_text">转文字</string>
+    <string name="forward_to_person">转发到个人</string>
+    <string name="forward_to_team">转发到群组</string>
+    <string name="withdrawn_msg">撤 回</string>
+    <string name="main_msg_list_delete_chatting">删除该聊天</string>
+    <string name="main_msg_list_sticky_on_top">置顶该聊天</string>
+    <string name="main_msg_list_clear_sticky_on_top">取消置顶</string>
+    <string name="save_to_device">保存到手机</string>
+    <string name="picture_save_fail">图片保存失败</string>
+    <string name="picture_save_to">图片已保存到手机</string>
+    <string name="search_join_team">搜索加入群组</string>
+    <string name="file_transfer_state_downloaded">已下载</string>
+    <string name="file_transfer_state_undownload">未下载</string>
+    <string name="trans_voice_failed">语音转化失败</string>
+    <string name="team_invalid_tip">您已退出该群</string>
+    <string name="normal_team_invalid_tip">您已退出该讨论组</string>
+    <string name="team_send_message_not_allow">您已不在该群，不能发送消息</string>
+    <string name="unsupport_title">无法显示该内容</string>
+    <string name="unsupport_desc">客户端版本不支持该内容</string>
+    <string name="revoke_failed">发送时间超过2分钟的消息，不能被撤回</string>
+    <string name="pic_and_video">图片和视频</string>
+    <string name="black_list_send_tip">消息已发送，但对方拒收</string>
+
+    <!-- 语音 -->
+    <string name="record_audio">按住 说话</string>
+    <string name="record_audio_end">松开  结束</string>
+    <string name="sdcard_not_exist_error">请插入SD卡</string>
+    <string name="recording_error">录音失败，请重试</string>
+    <string name="recording_init_failed">初始化录音失败</string>
+    <string name="recording_cancel">手指上滑，取消发送</string>
+    <string name="timer_default">00:00</string>
+    <string name="recording_cancel_tip">松开手指，取消发送</string>
+    <string name="recording_max_time">录音达到最大时间，是否发送？</string>
+
+    <!-- 拍照视频 -->
+    <string name="gallery_invalid">你的手机没有图库程序</string>
+    <string name="sdcard_not_enough_head_error">SD卡被拔出或存储空间不足，无法保存头像</string>
+    <string name="sdcard_not_enough_error">存储空间不足，无法保存此次多媒体消息</string>
+    <string name="download_video">正在下载视频</string>
+    <string name="download_video_fail">视频下载失败,请重试</string>
+    <string name="look_video_fail">无法播放该视频</string>
+    <string name="look_video_fail_try_again">暂时无法播放视频，请重试</string>
+    <string name="video_play">视频播放</string>
+    <string name="video_record">视频录制</string>
+    <string name="video_record_symbol">REC</string>
+    <string name="video_record_begin">开始录制</string>
+    <string name="connect_vedio_device_fail">无法连接视频设备 ，请稍候再试</string>
+    <string name="capture_video_size_in_kb">视频文件大小为: %1$dKB,</string>
+    <string name="capture_video_size_in_mb">视频文件大小为: %1$.2fMB,</string>
+    <string name="is_send_video">是否发送该视频？</string>
+    <string name="start_camera_to_record_failed">启动摄像头录制视频失败</string>
+    <string name="stop_fail_maybe_stopped">停止失败，可能已经停止</string>
+    <string name="video_exception">视频文件异常</string>
+    <string name="im_choose_video_file_size_too_large">视频文件过大，系统限制为20MB</string>
+    <string name="im_choose_video">请选择3GP MP4格式的视频文件</string>
+    <string name="video_record_short">录制视频太短</string>
+    <string name="download_progress_description">%1$s（%2$s/%3$s）</string>
+
+    <!-- 联系人选择器 -->
+    <string name="contact_selector">联系人选择器</string>
+
+    <!-- team -->
+    <string name="team_need_authentication">需要身份验证</string>
+    <string name="team_allow_anyone_join">允许任何人加入</string>
+    <string name="team_not_allow_anyone_join">不允许任何人申请加入</string>
+    <string name="team_admin_invite">管理员</string>
+    <string name="team_everyone_invite">所有人</string>
+    <string name="team_admin_update">管理员修改</string>
+    <string name="team_everyone_update">所有人修改</string>
+    <string name="team_invitee_need_authen">需要验证</string>
+    <string name="team_invitee_not_need_authen">不需要验证</string>
+    <string name="team_notify_mute">不提醒任何消息</string>
+    <string name="team_notify_all">提醒所有消息</string>
+    <string name="team_notify_manager">只提醒管理员消息</string>
+    <string name="team_nickname">群昵称</string>
+    <string name="team_nickname_none">未填写</string>
+    <string name="team_identity">身份</string>
+    <string name="remove_member">移出本群</string>
+    <string name="team_member_info">群名片</string>
+    <string name="team_admin">管理员</string>
+    <string name="team_creator">群主</string>
+    <string name="team_member">群成员</string>
+    <string name="team_normal_member">普通成员</string>
+    <string name="update_success">保存成功</string>
+    <string name="update_failed">保存失败, code:%d</string>
+    <string name="no_permission">没有权限</string>
+    <string name="set_team_admin">设为管理员</string>
+    <string name="cancel_team_admin">取消管理员</string>
+    <string name="team_member_remove_confirm">该用户移除本群</string>
+    <string name="team_annourcement">群公告</string>
+    <string name="invite_member">邀请成员</string>
+    <string name="team_name">群名称</string>
+    <string name="team_introduce">群介绍</string>
+    <string name="team_extension">群规则</string>
+    <string name="team_journal">群日志</string>
+    <string name="click_set">点击设置</string>
+    <string name="create_advanced_team">创建高级群</string>
+    <string name="reach_team_member_capacity">成员数量不能超过%1$d</string>
+    <string name="team_authentication">身份验证</string>
+    <string name="team_invite">邀请他人权限</string>
+    <string name="team_invite_02">邀请他人入群</string>
+    <string name="team_info_update">群资料修改权限</string>
+    <string name="team_invitee_authentication">被邀请人身份验证</string>
+    <string name="create_team">创建群</string>
+    <string name="over_team_member_capacity">邀请失败，成员人数上限为%1$d人</string>
+    <string name="over_team_capacity">创建失败，创建群数量达到限制</string>
+    <string name="create_team_failed">创建失败</string>
+    <string name="create_team_success">创建成功</string>
+    <string name="team_announce_title">标题</string>
+    <string name="team_announce_content">公告内容</string>
+    <string name="team_announce_notice">请输入群公告标题</string>
+    <string name="my_team_card">群昵称</string>
+    <string name="team_introduce_hint">请输入群介绍</string>
+    <string name="team_extension_hint">请输入群规则</string>
+    <string name="team_announce_hint">点击填写群公告</string>
+    <string name="team_notification_config">消息提醒</string>
+    <string name="team_transfer_without_member">没有可转移的群成员</string>
+    <string name="team_invite_members_success">群成员邀请已发出</string>
+    <string name="team_invite_members_failed">群成员邀请失败</string>
+    <string name="team_transfer_success">群转移成功</string>
+    <string name="team_transfer_failed">群转移失败</string>
+    <string name="quit_team_success">您已退群</string>
+    <string name="quit_team_failed">退群失败</string>
+    <string name="quit_normal_team_success">您已经退出讨论组</string>
+    <string name="quit_normal_team_failed">退出讨论组失败</string>
+    <string name="dismiss_team_success">群已解散</string>
+    <string name="dismiss_team_failed">解散群失败</string>
+    <string name="dismiss_team">解散群聊</string>
+    <string name="dismiss_team_hint">解散群后，此群将消失</string>
+    <string name="transfer_team">转让群</string>
+    <string name="quit_team">退出群聊</string>
+    <string name="quit_team_hint">退出后，将不再接收此群聊信息</string>
+    <string name="quit_normal_team">退出讨论组</string>
+    <string name="team_apply_to_join">申请加入</string>
+    <string name="team_apply_to_join_reject">拒绝让你加群</string>
+    <string name="advanced_team">我的群</string>
+    <string name="normal_team">讨论组</string>
+    <string name="team_name_toast">群名称不能为空</string>
+    <string name="team_nickname_toast">请输入群昵称</string>
+    <string name="not_allow_empty">不能为空</string>
+    <string name="chat_setting">聊天信息</string>
+    <string name="team_settings_name">设置名称</string>
+    <string name="normal_team_name">讨论组名称</string>
+    <string name="remove_member_success">移除成员成功</string>
+    <string name="remove_member_failed">移除成员失败</string>
+    <string name="invite_member_success">邀请成员成功</string>
+    <string name="invite_member_failed">邀请成员失败</string>
+    <string name="team_create_notice">请添加群成员</string>
+    <string name="team_settings_set_name">取个名字吧</string>
+    <string name="team_not_exist">该群不存在</string>
+    <string name="normal_team_not_exist">该讨论组不存在</string>
+    <string name="mute_msg">设置禁言</string>
+    <string name="set_head_image">设置头像</string>
+    <string name="team_update_cancel">取消更新</string>
+    <string name="team_update_failed">群头像设置失败</string>
+    <string name="reach_capacity">人数已达上限</string>
+    <!-- 消息搜索 -->
+    <string name="message_search_no_result">无结果</string>
+
+    <!-- image picker -->
+    <string name="picker_image_preview">预览</string>
+    <string name="picker_image_send">发送</string>
+    <string name="picker_image_folder">相册</string>
+    <string name="picker_image_album_loading">相册加载中…</string>
+    <string name="picker_image_album_empty">相册中没有图片！</string>
+    <string name="picker_image_folder_info">共%d张</string>
+    <string name="picker_image_exceed_max_image_select">最多选择%d张图片！</string>
+    <string name="picker_image_send_select">完成（%d）</string>
+    <string name="picker_image_preview_original">发送原图</string>
+    <string name="picker_image_preview_original_select">发送原图（%s）</string>
+    <string name="picker_image_error">获取图片出错</string>
+    <string name="image_compressed_size">该原始图片大小为: %1$s,</string>
+    <string name="unknow_size">未知大小</string>
+    <string name="is_send_image">是否发送该原始图片？</string>
+    <string name="multi_image_compressed_size">原始图片总大小为: %1$s,</string>
+    <string name="is_send_multi_image">是否发送这些原始图片？</string>
+    <string name="waitfor_image_local">正在打开相册，请稍候\u2026</string>
+    <string name="recapture">重拍</string>
+    <string name="image_show_error">图片显示异常</string>
+    <string name="memory_out">内存不足</string>
+    <string name="choose_from_photo_album">从手机相册选择</string>
+    <string name="choose">选取</string>
+    <string name="crop">裁剪</string>
+
+    <!-- 消息类型 -->
+    <string name="msg_type_image">图片</string>
+    <string name="msg_type_audio">语音</string>
+
+    <!-- 查看大图 -->
+    <string name="download_picture_fail">图片下载失败</string>
+    <string name="look_up_original_photo_format">查看原图（%s）</string>
+
+    <!--全文检索-->
+    <string name="fts_enable">全文检索(FTS4)</string>
+    <string name="fts_prefix_hit">前缀匹配高亮检索结果</string>
+    <string name="msg_search">全文检索</string>
+    <string name="msg_search_limit">全文检索显示条数</string>
+
+    <string name="load_failed">加载失败，请点我重试</string>
+    <string name="load_end">没有更多数据</string>
+    <string name="message_search_title">查看聊天内容</string>
+
+    <string name="text_item_content">选择一个群</string>
+    <string name="text_title_inv">选择联系人</string>
+
+    <string name="text_title_team_info">群信息</string>
+    <string name="team_info_team_creator">群主:</string>
+    <string name="team_info_team_applied">已申请</string>
+    <string name="title_dialog_apply">输入验证信息</string>
+    <string name="text_title_journal_rule">群日志说明</string>
+    <string name="verify_reminder">验证提醒</string>
+    <string name="delete_tip">删除提示</string>
+    <string name="delete_system_message">删除该条系统消息？</string>
+    <string name="agree">同意</string>
+    <string name="reject">拒绝</string>
+
+    <string name="title_message_agree">加群申请</string>
+
+    <string name="tv_fra_chat_01">登录蜂博士</string>
+    <string name="tv_fra_chat_02">与蜂友和专家亲密交流</string>
+    <string name="tv_fra_chat_03">登录/注册</string>
+
+
+
+    <!-- location -->
+    <string name="location_navigate">导航</string>
+    <string name="location_loading">正在定位</string>
+    <string name="location_map">地图定位</string>
+    <string name="my_location">我的位置</string>
+    <string name="location_address_unkown">该位置信息暂无</string>
+    <string name="format_mylocation">我的位置：%s</string>
+    <string name="location_address_fail">获取位置信息失败</string>
+    <string name="tools_selected">选择工具</string>
+    <string name="friends_map_navigation_web">在网页中打开</string>
+    <string name="location_open_map_error">打开地图出错</string>
+</resources>

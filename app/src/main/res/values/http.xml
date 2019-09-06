@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--<string name="app_web_url">http://183.129.215.18:50080/</string>-->
+ <string name="app_web_url">http://apitest.hibeeok.com/</string>
+<!--<string name="app_web_url">http://api.hibeeok.com/</string>-->
+<!--<string name="share_url_02">http://apitest.hibeeok.com/webexpertapply</string>-->
+<string name="share_url_02">http://api.hibeeok.com/webexpertapply</string>
+<string name="share_url_01">http://api.hibeeok.com/appdownload</string>
+</resources>

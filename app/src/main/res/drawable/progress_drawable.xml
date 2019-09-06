@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+* File: progress_drawable.xml
+* Copyright © 2013, Texas Instruments Incorporated - http://www.ti.com/
+* All rights reserved.
+ -->
+<animated-rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/bg_loading"
+    android:pivotX="50%"
+    android:pivotY="50%" >
+</animated-rotate>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">   
+     <!-- 实心 -->
+   <solid android:color="@color/no_color"/>
+    <stroke
+        android:width="0.5dp"
+        android:color="@color/yellow_login" />
+             <!--右上角,右下角,左上角, 左下角 -->
+    <corners
+        android:radius="5dp" />
+             
+</shape>  

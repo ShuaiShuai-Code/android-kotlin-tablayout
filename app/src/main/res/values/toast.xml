@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="err_nosdcard_for_save">没有SD卡</string>
+    <string name="toast_double_exit">再按一次退出程序</string>
+    <string name="toast_net_link">网络异常！</string>
+</resources>
