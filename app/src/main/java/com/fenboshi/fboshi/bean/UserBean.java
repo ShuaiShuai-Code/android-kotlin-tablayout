@@ -1,12 +1,13 @@
 package com.fenboshi.fboshi.bean;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.lifecycle.ViewModel;
 
 import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Generated;
 
 @Entity
-public class UserBean{
+public class UserBean extends ViewModel {
      private String accessToken;//Token
      private String deviceId;//设备id
      private int id;//用户id

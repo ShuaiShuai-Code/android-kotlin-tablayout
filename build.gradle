@@ -13,6 +13,7 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath 'android.arch.navigation:navigation-safe-args-gradle-plugin:1.0.0-alpha07'
         classpath 'org.greenrobot:greendao-gradle-plugin:3.2.2' // add plugin
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -27,9 +28,10 @@ allprojects {
 }
 
 ext {
-
+    lifecycle = '1.0.0-rc1'
+    lifecycleRuntime = '1.0.3'
     android = [
-            compileSdkVersion: 28,
+            compileSdkVersion: 29,
             minSdkVersion    : 21,
             targetSdkVersion : 28,
             versionCode      : 1,

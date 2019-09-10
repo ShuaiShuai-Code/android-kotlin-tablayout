@@ -2,13 +2,14 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'org.greenrobot.greendao'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
     defaultConfig {
         applicationId "com.fenboshi.fboshi.kotlin"
-        minSdkVersion 15
+        minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -25,6 +26,10 @@ android {
         schemaVersion 1
         daoPackage 'com.fenboshi.fboshi.greendao.gen'
         targetGenDir 'src/main/java'
+    }
+    compileOptions{
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 }
 
@@ -51,4 +56,8 @@ dependencies {
     implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'
     //greendao
     implementation 'org.greenrobot:greendao:3.2.2'
+    // Lifecycles, LiveData and ViewModel
+    implementation "android.arch.lifecycle:runtime:$rootProject.lifecycleRuntime"
+    implementation "android.arch.lifecycle:extensions:$rootProject.lifecycle"
+    kapt "android.arch.lifecycle:compiler:$rootProject.lifecycle"
 }
