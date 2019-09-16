@@ -3,7 +3,7 @@ package com.fenboshi.fboshi.until
 class TokenUntil{
     private val mAccessToken = ""
      fun getAccessToken(): String {
-        //        UserBean userEntity = DaoManager.getInstance().getUserBean();
+        //        Kt userEntity = DaoManager.getInstance().getUserBean();
         //        if (userEntity != null && !TextUtils.isEmpty(userEntity.getAccessToken())) {
         //            mAccessToken = userEntity.getAccessToken();
         //        }

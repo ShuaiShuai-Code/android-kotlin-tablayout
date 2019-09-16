@@ -26,7 +26,7 @@ public class UserBeanDao extends AbstractDao<UserBean, Void> {
     public static class Properties {
         public final static Property AccessToken = new Property(0, String.class, "accessToken", false, "ACCESS_TOKEN");
         public final static Property DeviceId = new Property(1, String.class, "deviceId", false, "DEVICE_ID");
-        public final static Property Id = new Property(2, int.class, "id", false, "ID");
+        public final static Property Id = new Property(2, String.class, "id", false, "ID");
         public final static Property Mobile = new Property(3, String.class, "mobile", false, "MOBILE");
         public final static Property NickName = new Property(4, String.class, "nickName", false, "NICK_NAME");
         public final static Property AvatarUrl = new Property(5, String.class, "avatarUrl", false, "AVATAR_URL");
@@ -49,7 +49,7 @@ public class UserBeanDao extends AbstractDao<UserBean, Void> {
         db.execSQL("CREATE TABLE " + constraint + "\"USER_BEAN\" (" + //
                 "\"ACCESS_TOKEN\" TEXT," + // 0: accessToken
                 "\"DEVICE_ID\" TEXT," + // 1: deviceId
-                "\"ID\" INTEGER NOT NULL ," + // 2: id
+                "\"ID\" TEXT," + // 2: id
                 "\"MOBILE\" TEXT," + // 3: mobile
                 "\"NICK_NAME\" TEXT," + // 4: nickName
                 "\"AVATAR_URL\" TEXT," + // 5: avatarUrl
@@ -76,7 +76,11 @@ public class UserBeanDao extends AbstractDao<UserBean, Void> {
         if (deviceId != null) {
             stmt.bindString(2, deviceId);
         }
-        stmt.bindLong(3, entity.getId());
+ 
+        String id = entity.getId();
+        if (id != null) {
+            stmt.bindString(3, id);
+        }
  
         String mobile = entity.getMobile();
         if (mobile != null) {
@@ -113,7 +117,11 @@ public class UserBeanDao extends AbstractDao<UserBean, Void> {
         if (deviceId != null) {
             stmt.bindString(2, deviceId);
         }
-        stmt.bindLong(3, entity.getId());
+ 
+        String id = entity.getId();
+        if (id != null) {
+            stmt.bindString(3, id);
+        }
  
         String mobile = entity.getMobile();
         if (mobile != null) {
@@ -147,7 +155,7 @@ public class UserBeanDao extends AbstractDao<UserBean, Void> {
         UserBean entity = new UserBean( //
             cursor.isNull(offset + 0) ? null : cursor.getString(offset + 0), // accessToken
             cursor.isNull(offset + 1) ? null : cursor.getString(offset + 1), // deviceId
-            cursor.getInt(offset + 2), // id
+            cursor.isNull(offset + 2) ? null : cursor.getString(offset + 2), // id
             cursor.isNull(offset + 3) ? null : cursor.getString(offset + 3), // mobile
             cursor.isNull(offset + 4) ? null : cursor.getString(offset + 4), // nickName
             cursor.isNull(offset + 5) ? null : cursor.getString(offset + 5), // avatarUrl
@@ -161,7 +169,7 @@ public class UserBeanDao extends AbstractDao<UserBean, Void> {
     public void readEntity(Cursor cursor, UserBean entity, int offset) {
         entity.setAccessToken(cursor.isNull(offset + 0) ? null : cursor.getString(offset + 0));
         entity.setDeviceId(cursor.isNull(offset + 1) ? null : cursor.getString(offset + 1));
-        entity.setId(cursor.getInt(offset + 2));
+        entity.setId(cursor.isNull(offset + 2) ? null : cursor.getString(offset + 2));
         entity.setMobile(cursor.isNull(offset + 3) ? null : cursor.getString(offset + 3));
         entity.setNickName(cursor.isNull(offset + 4) ? null : cursor.getString(offset + 4));
         entity.setAvatarUrl(cursor.isNull(offset + 5) ? null : cursor.getString(offset + 5));

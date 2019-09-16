@@ -31,6 +31,9 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    dataBinding{
+        enabled = true
+    }
 }
 
 
@@ -60,4 +63,7 @@ dependencies {
     implementation "android.arch.lifecycle:runtime:$rootProject.lifecycleRuntime"
     implementation "android.arch.lifecycle:extensions:$rootProject.lifecycle"
     kapt "android.arch.lifecycle:compiler:$rootProject.lifecycle"
+    //dagger2
+    implementation 'com.google.dagger:dagger:2.24'
+    kapt 'com.google.dagger:dagger-compiler:2.24'
 }

@@ -1,7 +1,6 @@
 package com.fenboshi.fboshi
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import androidx.lifecycle.get
 import androidx.navigation.NavController
@@ -20,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         actionBar?.setDisplayHomeAsUpEnabled(false)
         navController = Navigation.findNavController(this, R.id.nav_host_fragment)
         bnv_menu.setupWithNavController(navController)
-        var userBean=ViewModelProviders.of(this).get<UserBean>()
+        var userBean= ViewModelProviders.of(this).get<UserBean>()
 //        lifecycle.addObserver(GenericLifecycleObserver{ lifecycleOwner: LifecycleOwner, event: Lifecycle.Event ->
 //            Log.d("addObserver","event"+event)
 //        })

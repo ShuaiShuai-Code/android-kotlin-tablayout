@@ -116,91 +116,91 @@ public class DaoManager {
 //     * 设置实名认证状态
 //     */
 //    public void setIsReal(boolean isReal) {
-//        UserBean userBean = getUserBean();
+//        Kt userBean = getUserBean();
 //        userBean.setReal(isReal);
 //        saveUserBean(userBean);
 //    }
 //
 //    public void setRealName(String realName) {
-//        UserBean userBean = getUserBean();
+//        Kt userBean = getUserBean();
 //        userBean.setRealName(realName);
 //        saveUserBean(userBean);
 //    }
 ////--------
 //    public void setBackIdCard(String backIdCard) {
-//        UserBean userBean = getUserBean();
+//        Kt userBean = getUserBean();
 //        userBean.setBackIdcardPic(backIdCard);
 //        saveUserBean(userBean);
 //    }
 //
 //    public void setFrontIdCard(String frontIdCard) {
-//        UserBean userBean = getUserBean();
+//        Kt userBean = getUserBean();
 //        userBean.setFrontIdcardPic(frontIdCard);
 //        saveUserBean(userBean);
 //    }
 //
 //    public void setIdnumber(String idNumber) {
-//        UserBean userBean = getUserBean();
+//        Kt userBean = getUserBean();
 //        userBean.setIdCardNumber(idNumber);
 //        saveUserBean(userBean);
 //    }
 //    public void setIdBirthday(String idNumber) {
-//        UserBean userBean = getUserBean();
+//        Kt userBean = getUserBean();
 //        userBean.setIdCardBirthday(idNumber);
 //        saveUserBean(userBean);
 //    }
 //
 //    public void setIdSex(int sex) {
-//        UserBean userBean = getUserBean();
+//        Kt userBean = getUserBean();
 //        userBean.setIdCardSex(sex);
 //        saveUserBean(userBean);
 //    }
 //
 //    public void setIdCardRealName(String realName) {
-//        UserBean userBean = getUserBean();
+//        Kt userBean = getUserBean();
 //        userBean.setIdCardName(realName);
 //        saveUserBean(userBean);
 //    }
 //    //---------
 //
 //    public void setCompanyName(String str){
-//        UserBean userBean = getUserBean();
+//        Kt userBean = getUserBean();
 //        userBean.setCompanyName(str);
 //        saveUserBean(userBean);
 //    }
 //
 //    public void setIsPerfect(boolean b) {
-//        UserBean userBean = getUserBean();
+//        Kt userBean = getUserBean();
 //        userBean.setIsPerfectInfo(b);
 //        saveUserBean(userBean);
 //    }
 //
 //    public void setRole(int role) {
-//        UserBean userBean = getUserBean();
+//        Kt userBean = getUserBean();
 //        userBean.setRoleType(role);
 //        saveUserBean(userBean);
 //    }
 //
 //    public void setReceiptCode(String code){
-//        UserBean userBean = getUserBean();
+//        Kt userBean = getUserBean();
 //        userBean.setReceiptCode(code);
 //        saveUserBean(userBean);
 //    }
 //
 //    public void setServcePhone(String phone){
-//        UserBean userBean = getUserBean();
+//        Kt userBean = getUserBean();
 //        userBean.setCompanyServerPhone(phone);
 //        saveUserBean(userBean);
 //    }
 //
 //
 //    public void setTeamCode(String teamCode) {
-//        UserBean userBean = getUserBean();
+//        Kt userBean = getUserBean();
 //        userBean.setTeamCode(teamCode);
 //        saveUserBean(userBean);
 //    }
 //    public void setTeamName(String teamName) {
-//        UserBean userBean = getUserBean();
+//        Kt userBean = getUserBean();
 //        userBean.setTeamName(teamName);
 //        saveUserBean(userBean);
 //    }

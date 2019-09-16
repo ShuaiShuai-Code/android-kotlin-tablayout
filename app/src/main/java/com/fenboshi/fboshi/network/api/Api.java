@@ -21,7 +21,7 @@ public interface Api {
     //注册
 //    @POST("user/signup.htm")
 //    @FormUrlEncoded
-//    Observable<BaseResponse<UserBean>> signup(@Field("mobile") String mobile,
+//    Observable<BaseResponse<Kt>> signup(@Field("mobile") String mobile,
 //                                              @Field("checkCode") String checkCode,
 //                                              @Field("password") String password,
 //                                              @Field("deviceId") String deviceId,
@@ -30,7 +30,7 @@ public interface Api {
     //登陆
 //    @POST("user/login.htm")
 //    @FormUrlEncoded
-//    Observable<BaseResponse<UserBean>> login(@Field("mobile") String mobile,
+//    Observable<BaseResponse<Kt>> login(@Field("mobile") String mobile,
 //                                             @Field("password") String password,
 //                                             @Field("loginType") int loginType,
 //                                             @Field("checkCode") String checkCode);

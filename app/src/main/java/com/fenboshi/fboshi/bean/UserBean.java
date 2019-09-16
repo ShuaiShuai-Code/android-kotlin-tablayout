@@ -2,37 +2,37 @@ package com.fenboshi.fboshi.bean;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.lifecycle.ViewModel;
-
 import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Generated;
 
+//todo 没有用kotlin写bean，是因为数据库映射不出UserBeanDao
 @Entity
 public class UserBean extends ViewModel {
      private String accessToken;//Token
      private String deviceId;//设备id
-     private int id;//用户id
+     private String id = "1140965679";//用户id
      private String mobile;
-     private String nickName;
+     private String nickName ="幽你一默";
      private String avatarUrl;
 
      public UserBean() {
           super();
      }
 
-     @Generated(hash = 626100552)
-     public UserBean(String accessToken, String deviceId, int id, String mobile,
-             String nickName, String avatarUrl, int sex, String birthday) {
-         this.accessToken = accessToken;
-         this.deviceId = deviceId;
-         this.id = id;
-         this.mobile = mobile;
-         this.nickName = nickName;
-         this.avatarUrl = avatarUrl;
-         this.sex = sex;
-         this.birthday = birthday;
-     }
+     @Generated(hash = 409608755)
+    public UserBean(String accessToken, String deviceId, String id, String mobile,
+            String nickName, String avatarUrl, int sex, String birthday) {
+        this.accessToken = accessToken;
+        this.deviceId = deviceId;
+        this.id = id;
+        this.mobile = mobile;
+        this.nickName = nickName;
+        this.avatarUrl = avatarUrl;
+        this.sex = sex;
+        this.birthday = birthday;
+    }
 
-     @Override
+    @Override
      public int hashCode() {
           return super.hashCode();
      }
@@ -75,11 +75,11 @@ public class UserBean extends ViewModel {
          this.deviceId = deviceId;
      }
 
-     public int getId() {
+     public String getId() {
          return this.id;
      }
 
-     public void setId(int id) {
+     public void setId(String id) {
          this.id = id;
      }
 
