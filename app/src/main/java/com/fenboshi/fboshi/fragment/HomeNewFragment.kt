@@ -25,13 +25,21 @@ private lateinit var homeNewFragmentBinding :HomeNewFragmentBinding
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        homeNewFragmentBinding =  DataBindingUtil.inflate(inflater, R.layout.home_new_fragment,container,false);
+        homeNewFragmentBinding =  DataBindingUtil.inflate(
+            inflater,
+            R.layout.home_new_fragment,
+            container,
+            false
+        )
+
         return  homeNewFragmentBinding.root
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         DaggerUserBeanComPonent.create().inject(this)
+        homeNewFragmentBinding.setLifecycleOwner(viewLifecycleOwner)
+
         homeNewFragmentBinding.userBean=userBean.apply {
             this.id=id
             this.nickName=nickName
