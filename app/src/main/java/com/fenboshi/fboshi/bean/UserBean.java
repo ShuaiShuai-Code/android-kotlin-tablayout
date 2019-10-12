@@ -1,23 +1,30 @@
 package com.fenboshi.fboshi.bean;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.lifecycle.ViewModel;
 import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Generated;
 
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+
 //todo 没有用kotlin写bean，是因为数据库映射不出UserBeanDao
 @Entity
-public class UserBean extends ViewModel {
+public class UserBean  implements Serializable {
      private String accessToken;//Token
      private String deviceId;//设备id
      private String id = "1140965679";//用户id
      private String mobile;
      private String nickName ="幽你一默";
      private String avatarUrl;
+     private static final long serialVersionUID = -4211449776975163975L;
 
      public UserBean() {
           super();
      }
+
+
 
      @Generated(hash = 409608755)
     public UserBean(String accessToken, String deviceId, String id, String mobile,
@@ -30,7 +37,11 @@ public class UserBean extends ViewModel {
         this.avatarUrl = avatarUrl;
         this.sex = sex;
         this.birthday = birthday;
+
+
     }
+
+
 
     @Override
      public int hashCode() {

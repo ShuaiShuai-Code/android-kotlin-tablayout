@@ -8,9 +8,11 @@ import org.greenrobot.greendao.database.Database;
 import org.greenrobot.greendao.identityscope.IdentityScopeType;
 import org.greenrobot.greendao.internal.DaoConfig;
 
+import com.fenboshi.fboshi.bean.ArticelBean;
 import com.fenboshi.fboshi.bean.UserBean;
 import com.fenboshi.fboshi.db.AppInfo;
 
+import com.fenboshi.fboshi.greendao.gen.ArticelBeanDao;
 import com.fenboshi.fboshi.greendao.gen.UserBeanDao;
 import com.fenboshi.fboshi.greendao.gen.AppInfoDao;
 
@@ -23,9 +25,11 @@ import com.fenboshi.fboshi.greendao.gen.AppInfoDao;
  */
 public class DaoSession extends AbstractDaoSession {
 
+    private final DaoConfig articelBeanDaoConfig;
     private final DaoConfig userBeanDaoConfig;
     private final DaoConfig appInfoDaoConfig;
 
+    private final ArticelBeanDao articelBeanDao;
     private final UserBeanDao userBeanDao;
     private final AppInfoDao appInfoDao;
 
@@ -33,22 +37,32 @@ public class DaoSession extends AbstractDaoSession {
             daoConfigMap) {
         super(db);
 
+        articelBeanDaoConfig = daoConfigMap.get(ArticelBeanDao.class).clone();
+        articelBeanDaoConfig.initIdentityScope(type);
+
         userBeanDaoConfig = daoConfigMap.get(UserBeanDao.class).clone();
         userBeanDaoConfig.initIdentityScope(type);
 
         appInfoDaoConfig = daoConfigMap.get(AppInfoDao.class).clone();
         appInfoDaoConfig.initIdentityScope(type);
 
+        articelBeanDao = new ArticelBeanDao(articelBeanDaoConfig, this);
         userBeanDao = new UserBeanDao(userBeanDaoConfig, this);
         appInfoDao = new AppInfoDao(appInfoDaoConfig, this);
 
+        registerDao(ArticelBean.class, articelBeanDao);
         registerDao(UserBean.class, userBeanDao);
         registerDao(AppInfo.class, appInfoDao);
     }
     
     public void clear() {
+        articelBeanDaoConfig.clearIdentityScope();
         userBeanDaoConfig.clearIdentityScope();
         appInfoDaoConfig.clearIdentityScope();
+    }
+
+    public ArticelBeanDao getArticelBeanDao() {
+        return articelBeanDao;
     }
 
     public UserBeanDao getUserBeanDao() {

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">蜂博士</string>
+    <string name="app_name">懒人笔记</string>
     <string name="app_path">/fboshi/</string>
     <string name="app_path_img">/fboshi/img/</string>
     <string name="app_path_image_temp">/fboshi/temp/</string>

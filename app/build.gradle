@@ -37,22 +37,23 @@ android {
 }
 
 
-
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.0.2'
     implementation 'androidx.core:core-ktx:1.0.2'
     implementation rootProject.ext.libraries
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     //noinspection GradleCompatible
     implementation 'com.android.support:design:28.0.0'
-    implementation 'com.squareup.retrofit2:retrofit:2.3.0'//导入retrofit
-    implementation 'com.google.code.gson:gson:2.6.2'//Gson 库
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    //导入retrofit
+    implementation 'com.google.code.gson:gson:2.6.2'
+    //Gson 库
     //下面两个是RxJava 和 RxAndroid
-    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
     implementation 'io.reactivex.rxjava2:rxjava:2.x.y'
-    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'//转换器，请求结果转换成Model
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    //转换器，请求结果转换成Model
     implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
     //Log工具
     implementation 'com.github.zhaokaiqiang.klog:library:1.6.0'
@@ -60,10 +61,12 @@ dependencies {
     //greendao
     implementation 'org.greenrobot:greendao:3.2.2'
     // Lifecycles, LiveData and ViewModel
-    implementation "android.arch.lifecycle:runtime:$rootProject.lifecycleRuntime"
-    implementation "android.arch.lifecycle:extensions:$rootProject.lifecycle"
-    kapt "android.arch.lifecycle:compiler:$rootProject.lifecycle"
     //dagger2
     implementation 'com.google.dagger:dagger:2.24'
     kapt 'com.google.dagger:dagger-compiler:2.24'
+    //leancloud sdk
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    implementation 'com.alibaba:fastjson:1.1.70.android'
+    implementation 'org.ligboy.retrofit2:converter-fastjson-android:2.1.0'
+    implementation files('libs/storage-core-5.0.9.jar')
 }
