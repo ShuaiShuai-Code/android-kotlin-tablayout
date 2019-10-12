@@ -1,5 +1,5 @@
 # android-kotlin-tablayout
-######MVVM+LiveData初稿已经完成，等待优化，目前可以用来学习参考，有问题可以加我微信1140965679
+###MVVM+LiveData初稿已经完成，等待优化，目前可以用来学习参考，有问题可以加我微信1140965679
 一个基于`kotlin`的`demo`，主要是两个功能，一个是底部导航，使用了`BottomNavigationView`，首页一个`tablayout`+`viewpager`+
 `fragment`，一个小型架构，目前没有数据交互，可以自己扩展。
 
