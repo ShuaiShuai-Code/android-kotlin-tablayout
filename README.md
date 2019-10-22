@@ -186,9 +186,82 @@ DaggerUserBeanComPonent.create().inject(this)
         android:text="@{userBean.nickName}"/>
 ```
 6:使用 `greenDao` 数据库框架，保存数据到本地会用到
+7:LiveData管理数据
+HomeNewViewModel继承ViewModel,使用MutableLiveData来管理数据，以便数据更新是通知片段代码如下：
+```markdown
+class HomeNewViewModel :ViewModel(){
 
-初稿：`mvvm`设计，目前代码可以实现`dagger2`管理对象，moudle提供数据，viewmoudle链接moudle和view，以`databinding`管理view，
-显示数据，mvvm架构持续迭代中，如果有问题在这里
+    private  var articelBean: MutableLiveData<List<ArticelBean>>? = null
+    fun getListData() :LiveData<List<ArticelBean>>{
+
+        var userRepository=ArticelRepository()
+        return  userRepository!!.getArticel()
+    }
+
+    fun setArtice(articelBeanList: List<ArticelBean>){
+        articelBean?.value =articelBeanList
+    }
+
+
+}
+```
+FragmentNewFragment使用ViewModel说明
+```markdown
+//HomeNewFragment通过ViewModelProviders获取viewModel实列
+var homeNewViewModel= ViewModelProviders.of(this).get<HomeNewViewModel>()
+//观察数据改变，更新UI
+var nameObserver =object:androidx.lifecycle.Observer<List<ArticelBean>>{
+            override fun onChanged(articelBean: List<ArticelBean>?) {
+               updataUI(articelBean!!)
+            }
+        }
+//注册一个观察者，获取数据请查看ViewModel的getListData（）方法    
+homeNewViewModel.getListData().observe(this,nameObserver)
+//gitList()方法使用的是Repository管理的用户异步请求，这里多封装一层是为了请求服务器这里更灵活，易维护
+ fun getListData() :LiveData<List<ArticelBean>>{
+
+        var userRepository=ArticelRepository()
+        return  userRepository!!.getArticel()
+}
+
+```
+请求服务器模块独立,mediatorLiveData的value有更新的时候，UI就更新了，这里请求服务器使用了一个第三方的后端服务leancloud，
+如果请求自己的数据库，按需求更改。
+```markdown
+fun   getArticel(): LiveData<List<ArticelBean>> {
+        var mediatorLiveData= MediatorLiveData<List<ArticelBean>>()
+        //获取数据
+        val query = AVQuery<AVObject>("Article")
+        query.findInBackground()
+            .subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
+            .subscribe(object : Observer<List<AVObject>> {
+                override fun onNext(listArtice: List<ArticelBean>) {
+                    Log.d("UserBean","event"+"onNext" )
+             
+                    mediatorLiveData.value=articelBeanList
+
+                }
+                override fun onComplete() {
+                    Log.d("UserBean","event"+"onComplete" )
+                }
+
+                override fun onSubscribe(d: Disposable) {
+                    Log.d("UserBean","onSubscribe"+ d)
+                }
+
+                override fun onError(e: Throwable) {
+                    Log.d("UserBean","onError"+e )
+                }
+
+
+            })
+        return  mediatorLiveData
+        }
+```
 [有问题在这里提问](https://github.com/gethub-json/android-kotlin-tablayout)
 [源代码地址](https://github.com/gethub-json/android-kotlin-tablayout)
 ![image](https://github.com/gethub-json/android-kotlin-tablayout/blob/master/app/demo.jpg)
+####新添加功能，搭建了mvvm架构，包裹异步请求，dagger2管理对象 `mvvm`设计，目前代码可以实现`dagger2`管理对象，moudle提供数据，viewmoudle链接moudle和view，以`databinding`管理view，
+####显示数据，mvvm架构持续迭代中，异步请求完数据就是这个样子的
+![image](https://github.com/gethub-json/android-kotlin-tablayout/blob/master/app/demo2.jpg)

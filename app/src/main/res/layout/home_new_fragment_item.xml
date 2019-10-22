@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="avobject"
+            type="cn.leancloud.AVObject" />
+    </data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/title_template"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_18"
+            android:textColor="@color/color_black_333333"
+            android:text="标题"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/auto"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center"
+        android:text="作者"/>
+
+</LinearLayout>
+</layout>

@@ -3,17 +3,19 @@ package com.fenboshi.fboshi.viewmodel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import cn.leancloud.AVObject
 import com.fenboshi.fboshi.bean.ArticelBean
+import com.fenboshi.fboshi.component.DaggerArticelComPonent
+import javax.inject.Inject
 
 class HomeNewViewModel :ViewModel(){
-     // lateinit var userRepository: ArticelRepository
-   // lateinit var articelBeanList: LiveData<List<ArticelBean>>
+    @Inject
+    lateinit var userRepository: ArticelRepository
+
     private  var articelBean: MutableLiveData<List<ArticelBean>>? = null
-    fun getListData() :LiveData<List<ArticelBean>>{
-//       if(this.articelBeanList!=null){
-//           return articelBeanList
-//       }
-        var userRepository=ArticelRepository()
+
+    fun getListData() :LiveData<List<AVObject>>{
+        DaggerArticelComPonent.create().inject(this)
         return  userRepository!!.getArticel()
     }
 
@@ -21,7 +23,7 @@ class HomeNewViewModel :ViewModel(){
         articelBean?.value =articelBeanList
     }
 
-//    fun HomeNewViewModel(userRepository: ArticelRepository){
-//        this.userRepository =userRepository
-//    }
+
+
+
 }
