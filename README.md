@@ -1,7 +1,7 @@
 # android-kotlin-tablayout
 # MVVM+LiveData初稿已经完成，等待优化，目前可以用来学习参考，有问题可以加我微信1140965679
 一个基于`kotlin`的`demo`，主要是两个功能，一个是底部导航，使用了`BottomNavigationView`，首页一个`tablayout`+`viewpager`+
-`fragment`，一个小型架构，目前没有数据交互，可以自己扩展。
+`fragment`，一个小型架构，使用mvvm实现与后台交互，可以自己扩展。
 ```markdown
 mvvm+dagger2+Livedata,BottomNavigationView实现底部导航切换，viewpager+tablayout实现首页头部导航，架构是目前最主流的架构
 mvvm，数据偏基础适合初学者
@@ -17,8 +17,8 @@ mvvm，数据偏基础适合初学者
 
     ViewModel：负责完成View与Model间的交互和业务逻辑，基于DataBinding改变UI
 
-1:使用 `kotlin`，代码更简单
-2:使用 `BottomNavigationView`，底部导航简单实现
+### 1:使用 `kotlin`，代码更简单
+### 2:使用 `BottomNavigationView`，底部导航简单实现
 ```
  <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bnv_menu"
@@ -82,7 +82,7 @@ mvvm，数据偏基础适合初学者
  navController = Navigation.findNavController(this, R.id.nav_host_fragment)
  bnv_menu.setupWithNavController(navController)
 ```
-3:使用 `lifeCycle`框架管理activity和fragement生命后期
+### 3:使用 `lifeCycle`框架管理activity和fragement生命后期
 ```
   private fun initLocationListener() {
         myLocationListener = LifeCycleListener(this, lifecycle,null)
@@ -90,7 +90,7 @@ mvvm，数据偏基础适合初学者
 
     }
 ```
-其中LifeCycleListener是自己写的，里面主要是activity/fragment的生命周期函数代码如下：
+### 其中LifeCycleListener是自己写的，里面主要是activity/fragment的生命周期函数代码如下：
 ```
 class LifeCycleListener(
     context: Context?, lifecycle:Lifecycle,
@@ -190,8 +190,10 @@ DaggerUserBeanComPonent.create().inject(this)
         android:layout_margin="15dp"
         android:text="@{userBean.nickName}"/>
 ```
-6:使用 `greenDao` 数据库框架，保存数据到本地会用到
-7:LiveData管理数据
+### 6:使用 `greenDao` 数据库框架，保存数据到本地会用到
+
+
+### 7:LiveData管理数据
 HomeNewViewModel继承ViewModel,使用MutableLiveData来管理数据，以便数据更新是通知片段代码如下：
 ```markdown
 class HomeNewViewModel :ViewModel(){
@@ -210,7 +212,7 @@ class HomeNewViewModel :ViewModel(){
 
 }
 ```
-FragmentNewFragment使用ViewModel说明
+### FragmentNewFragment使用ViewModel说明
 ```markdown
 //HomeNewFragment通过ViewModelProviders获取viewModel实列
 var homeNewViewModel= ViewModelProviders.of(this).get<HomeNewViewModel>()
