@@ -2,6 +2,11 @@
 # MVVM+LiveData初稿已经完成，等待优化，目前可以用来学习参考，有问题可以加我微信1140965679
 一个基于`kotlin`的`demo`，主要是两个功能，一个是底部导航，使用了`BottomNavigationView`，首页一个`tablayout`+`viewpager`+
 `fragment`，一个小型架构，目前没有数据交互，可以自己扩展。
+```markdown
+mvvm+dagger2+Livedata,BottomNavigationView实现底部导航切换，viewpager+tablayout实现首页头部导航，架构是目前最主流的架构
+mvvm，数据偏基础适合初学者
+
+```
 
 `mvvm架构模式`
 
@@ -264,4 +269,6 @@ fun   getArticel(): LiveData<List<ArticelBean>> {
 ![image](https://github.com/gethub-json/android-kotlin-tablayout/blob/master/app/demo.jpg)
 ####新添加功能，搭建了mvvm架构，包裹异步请求，dagger2管理对象 `mvvm`设计，目前代码可以实现`dagger2`管理对象，moudle提供数据，viewmoudle链接moudle和view，以`databinding`管理view，
 ####显示数据，mvvm架构持续迭代中，异步请求完数据就是这个样子的
+
+
 ![image](https://github.com/gethub-json/android-kotlin-tablayout/blob/master/app/demo2.jpg)
