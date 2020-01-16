@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">懒人笔记</string>
+    <string name="app_name">coding笔记</string>
     <string name="app_path">/fboshi/</string>
     <string name="app_path_img">/fboshi/img/</string>
     <string name="app_path_image_temp">/fboshi/temp/</string>
@@ -44,7 +44,7 @@
     <string name="attention_ed">已关注</string>
     <string name="send">发表</string>
     <string name="comment">评论</string>
-    <string name="answer">解答</string>
+    <string name="answer">评论</string>
     <string name="zan">赞</string>
     <string name="login">登录</string>
     <string name="loading">加载中&#8230;</string>
@@ -226,8 +226,6 @@
     <string name="txt_setting_set_pwd_hint_04">新密码输入不一致</string>
     <string name="txt_setting_set_pwd_hint_05">密码长度应该在6-20位字符之间</string>
     <string name="txt_setting_exit_hint">确定退出登录？</string>
-
-
 
 
     <string name="dialog_update_version_title">发现新版本V$number$</string>
@@ -669,7 +667,6 @@
     <string name="tv_fra_chat_01">登录蜂博士</string>
     <string name="tv_fra_chat_02">与蜂友和专家亲密交流</string>
     <string name="tv_fra_chat_03">登录/注册</string>
-
 
 
     <!-- location -->

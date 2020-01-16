@@ -21,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            app:itemBackground="@color/color_main"
+            app:itemBackground="@color/color_grey_999999"
             app:itemIconTint="@drawable/main_bottom"
             app:itemTextColor="@drawable/main_bottom"
             app:layout_constraintBottom_toBottomOf="parent"

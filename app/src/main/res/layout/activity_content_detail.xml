@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.fenboshi.fboshi.activity.ContentDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/head_img"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/person_bg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.042"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.027"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tv_auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="作者"
+                android:textColor="@color/color_black_333333"
+                android:textSize="@dimen/text_size_17"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.036"
+                app:layout_constraintStart_toEndOf="@+id/head_img"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.022"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tv_cotent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容"
+                android:textColor="@color/color_grey_999999"
+                android:textSize="@dimen/sp_14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.733"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_auto"
+                tools:ignore="MissingConstraints" />
+            <View
+                android:id="@+id/line_10"
+                style="@style/line_10_ho"
+                app:layout_constraintTop_toBottomOf="@+id/tv_cotent"
+                android:layout_marginTop="10dp"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:id="@+id/lin_learn_detail_comment"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:visibility="visible"
+                app:layout_constraintTop_toBottomOf="@+id/line_10"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    style="@style/text_normal_gray_28"
+                    android:text="@string/answer"
+                    android:textSize="@dimen/text_size_17"/>
+
+                <TextView
+                    android:id="@+id/txt_learn_detail_comment"
+                    style="@style/text_normal_color_000000"
+                    android:layout_marginLeft="3dp"
+                    android:text="0"/>
+            </LinearLayout>
+            <View style="@style/line_1_ho"
+                tools:ignore="MissingConstraints" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="MissingConstraints"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/lin_learn_detail_comment">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

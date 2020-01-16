@@ -33,8 +33,8 @@ class MainActivity : AppCompatActivity() {
         val nameObserver = object : androidx.lifecycle.Observer<UserBean> {
             override fun onChanged(t: UserBean?) {
 
-                Log.d("UserBean","event"+ (t?.mobile ?:"123@11.com"))
-                Log.d("UserBean","event"+ (t?.nickName ?:"幽你一默"))
+                //Log.d("UserBean","event"+ (t?.mobile ?:"1140965679@qq.com"))
+                //Log.d("UserBean","event"+ (t?.nickName ?:"幽你一默"))
             }
 
 

@@ -245,7 +245,9 @@
         <item name="android:layout_height">10dp</item>
         <item name="android:background">@color/gray_list_bg</item>
     </style>
-
+    <style name="text_normal_color_000000" parent="size_normal" >
+        <item name="android:textColor">@color/color_black_b3000000</item>
+    </style>
     <style name="line_1_ho_gray_e5" >
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">1dp</item>

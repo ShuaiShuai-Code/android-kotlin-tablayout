@@ -43,9 +43,9 @@ class  QuestionFragment:Fragment(){
         mFragment.add(replyFragment)
         mFragment.add(expertFragment)
 
-        liststr.add("页面一")
-        liststr.add("页面二")
-        liststr.add("页面三")
+        liststr.add("推荐文章")
+        liststr.add("待开发")
+        liststr.add("待开发")
         //关联viewpager
         tabLayout.setupWithViewPager(viewPager)
         viewPager.adapter=MyAdapter(mFragment,liststr,childFragmentManager)

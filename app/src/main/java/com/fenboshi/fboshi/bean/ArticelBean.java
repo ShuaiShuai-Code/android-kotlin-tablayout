@@ -18,14 +18,19 @@ public class ArticelBean   implements Serializable {
      private String auto;
      private String type;
      private String content;
+     private String HeadImage;
+
+
+
     private static final long serialVersionUID = -9776975163975L;
 
-    @Generated(hash = 1965417262)
-    public ArticelBean(String title, String auto, String type, String content) {
+    @Generated(hash = 1845752749)
+    public ArticelBean(String title, String auto, String type, String content, String HeadImage) {
         this.title = title;
         this.auto = auto;
         this.type = type;
         this.content = content;
+        this.HeadImage = HeadImage;
     }
 
     @Generated(hash = 692915774)
@@ -62,5 +67,12 @@ public class ArticelBean   implements Serializable {
 
     public void setContent(String content) {
         this.content = content;
+    }
+    public String getHeadImage() {
+        return HeadImage;
+    }
+
+    public void setHeadImage(String headImage) {
+        HeadImage = headImage;
     }
 }

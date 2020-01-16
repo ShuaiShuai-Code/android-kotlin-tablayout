@@ -5,26 +5,26 @@
         android:id="@+id/questionFragment"
         android:enabled="true"
         android:icon="@drawable/main_01"
-        android:title="问问"
+        android:title="首页"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/learnFragment"
         android:enabled="true"
         android:icon="@drawable/main_02"
-        android:title="学学"
+        android:title="课堂"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/lookFragment"
         android:enabled="true"
         android:icon="@drawable/main_03"
-        android:title="看看"
+        android:title="头条"
         android:tooltipText="14sp"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/chatFragment"
         android:enabled="true"
         android:icon="@drawable/main_05"
-        android:title="聊聊"
+        android:title="消息"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/mineFragment"

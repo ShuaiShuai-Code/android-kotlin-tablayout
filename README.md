@@ -266,6 +266,9 @@ fun   getArticel(): LiveData<List<ArticelBean>> {
         return  mediatorLiveData
         }
 ```
+###  8:新添加功能，lottie动画，实现kotlin与lottie的完美结合，优化文章列表UI
+
+     
 [有问题在这里提问](https://github.com/gethub-json/android-kotlin-tablayout)
 [源代码地址](https://github.com/gethub-json/android-kotlin-tablayout)
 ![image](https://github.com/gethub-json/android-kotlin-tablayout/blob/master/app/demo.jpg)
