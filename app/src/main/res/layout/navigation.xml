@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp45"
+    android:layout_gravity="bottom"
+    android:clipChildren="false"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+
+    <!--<View-->
+    <!--android:layout_width="@dimen/dp45"-->
+    <!--android:layout_height="@dimen/dp45"-->
+    <!--android:layout_marginBottom="@dimen/dp15"-->
+    <!--android:background="@drawable/shape_cirle2"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--app:layout_constraintRight_toRightOf="parent" />-->
+
+    <View
+        android:id="@+id/line"
+        style="@style/line_1_ho"
+        tools:ignore="MissingConstraints" />
+
+    <!--    <View-->
+    <!--        android:layout_width="@dimen/dp50"-->
+    <!--        android:layout_height="@dimen/dp45"-->
+    <!--        android:layout_marginBottom="@dimen/dp15"-->
+    <!--        android:background="@drawable/shape_cirle2"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent" />-->
+
+
+    <RadioGroup
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:animateLayoutChanges="true"
+        android:background="@color/white"
+        android:clipChildren="false"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/line">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/dp2"
+            android:paddingBottom="@dimen/dp2">
+
+            <RadioButton
+                android:id="@+id/navigation_tab1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/navigation_tab1"
+                android:drawablePadding="@dimen/dp3"
+                android:gravity="center"
+                android:text="首页"
+                android:textColor="@drawable/navigation_text"
+                android:textSize="11sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/dp2"
+            android:paddingBottom="@dimen/dp2">
+
+            <RadioButton
+                android:id="@+id/navigation_tab2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:drawableTop="@drawable/navigation_tab2"
+                android:drawablePadding="@dimen/dp3"
+                android:gravity="center"
+                android:text="头条"
+                android:textColor="@drawable/navigation_text"
+                android:textSize="11sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_click"
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/iv_fabu"
+                android:layout_width="57dip"
+                android:layout_height="57dip"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_tiwen_fabu"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="57dip"
+                android:layout_height="57dip"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_daohang_bg" />
+
+            <ImageView
+                android:id="@+id/iv_img"
+                android:layout_width="@dimen/dp22"
+                android:layout_height="@dimen/dp22"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_daohang_open" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rr_home_message"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/dp2"
+            android:paddingBottom="@dimen/dp2">
+
+            <RadioButton
+                android:id="@+id/navigation_tab3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:button="@null"
+                android:drawableTop="@drawable/navigation_tab3"
+                android:drawablePadding="@dimen/dp3"
+                android:gravity="center"
+                android:text="消息"
+                android:textColor="@drawable/navigation_text"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/img_main_bottom_message"
+                style="@style/text_small_4_white"
+                android:layout_width="15sp"
+                android:layout_height="15sp"
+                android:layout_alignEnd="@id/navigation_tab3"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="11dp"
+                android:background="@drawable/nim_new_message_notify"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/dp2"
+            android:paddingBottom="@dimen/dp2">
+            <RadioButton
+                android:id="@+id/navigation_tab4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:drawableTop="@drawable/navigation_tab4"
+                android:drawablePadding="@dimen/dp3"
+                android:gravity="center"
+                android:text="我的"
+                android:textColor="@drawable/navigation_text"
+                android:textSize="11sp" />
+        </RelativeLayout>
+
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

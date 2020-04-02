@@ -73,4 +73,5 @@ dependencies {
     implementation 'de.hdodenhof:circleimageview:2.1.0'
     //动画
     implementation 'com.airbnb.android:lottie:2.7.0'
+    api "com.android.support.constraint:constraint-layout:1.1.3"
 }

@@ -4,7 +4,7 @@
 `fragment`，一个小型架构，使用mvvm实现与后台交互，可以自己扩展。
 ```markdown
 mvvm+dagger2+Livedata,BottomNavigationView实现底部导航切换，viewpager+tablayout实现首页头部导航，架构是目前最主流的架构
-mvvm，数据偏基础适合初学者
+mvvm
 
 ```
 
@@ -19,6 +19,7 @@ mvvm，数据偏基础适合初学者
 
 ### 1:使用 `kotlin`，代码更简单
 ### 2:使用 `BottomNavigationView`，底部导航简单实现
+### 3:2020年4月2号更新，底部导航栏动画
 ```
  <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bnv_menu"
@@ -45,26 +46,26 @@ mvvm，数据偏基础适合初学者
         android:id="@+id/questionFragment"
         android:enabled="true"
         android:icon="@drawable/main_01"
-        android:title="问问"
+        android:title="首页"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/learnFragment"
         android:enabled="true"
         android:icon="@drawable/main_02"
-        android:title="学学"
+        android:title="课堂"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/lookFragment"
         android:enabled="true"
         android:icon="@drawable/main_03"
-        android:title="看看"
+        android:title="头条"
         android:tooltipText="14sp"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/chatFragment"
         android:enabled="true"
         android:icon="@drawable/main_05"
-        android:title="聊聊"
+        android:title="消息"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/mineFragment"
@@ -268,11 +269,25 @@ fun   getArticel(): LiveData<List<ArticelBean>> {
 ```
 ###  8:新添加功能，lottie动画，实现kotlin与lottie的完美结合，优化文章列表UI
 
+(1):lottie再xml中使用
+```markdown
+//lottie_loop 是否循环播放动画
+//data_1.json 动画文件
+
+ <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:lottie_fileName="data_1.json"
+            app:lottie_loop="false"
+            app:lottie_autoPlay="true"
+            android:layout_alignParentRight="true"/>
+```
      
 [有问题在这里提问](https://github.com/gethub-json/android-kotlin-tablayout)
 [源代码地址](https://github.com/gethub-json/android-kotlin-tablayout)
 ![image](https://github.com/gethub-json/android-kotlin-tablayout/blob/master/app/demo.jpg)
-####新添加功能，搭建了mvvm架构，包裹异步请求，dagger2管理对象 `mvvm`设计，目前代码可以实现`dagger2`管理对象，moudle提供数据，viewmoudle链接moudle和view，以`databinding`管理view，
+####新添加功能，搭建了mvvm架构，包括异步请求，dagger2管理对象 `mvvm`设计，目前代码可以实现`dagger2`管理对象，moudle提供数据，viewmoudle链接moudle和view，以`databinding`管理view，
 ####显示数据，mvvm架构持续迭代中，异步请求完数据就是这个样子的
 
 
