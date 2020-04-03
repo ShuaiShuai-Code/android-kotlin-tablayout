@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Toast
 import androidx.lifecycle.ViewModelProviders
 import androidx.lifecycle.get
 import androidx.navigation.NavController
@@ -98,6 +99,7 @@ class MainActivity : AppCompatActivity() {
                 _startAnimation(iv_fabu_copy, 500, animatorProperty)
                 isOpen = true
             } else {
+
                 //关闭动画
                 isOpen = false
                 _closeAnimation(iv_fabu_copy, 500, 310f)
@@ -110,6 +112,9 @@ class MainActivity : AppCompatActivity() {
                 )
             }
 
+        })
+        iv_fabu_copy.setOnClickListener(View.OnClickListener{
+            Toast.makeText(this,"点击了新增",Toast.LENGTH_SHORT).show()
         })
 
     }
