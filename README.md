@@ -7,7 +7,7 @@ mvvm+dagger2+Livedata,BottomNavigationView实现底部导航切换，viewpager+t
 mvvm
 
 ```
-
+![testAnim.gif](https://upload-images.jianshu.io/upload_images/4752376-56518b90e7abd559.gif?imageMogr2/auto-orient/strip)
 `mvvm架构模式`
 
 
