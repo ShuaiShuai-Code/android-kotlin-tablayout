@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Statistic">
+    <option name="separateTabsFileTypes" value="kt;xml;css;html;js;properties;jsp;txt;php;php4;php5;phtml;inc;py;java;" />
+    <option name="excludedDirectories">
+      <list>
+        <option value="$PROJECT_DIR$/.gradle" />
+        <option value="$PROJECT_DIR$/.idea" />
+        <option value="$PROJECT_DIR$/build" />
+      </list>
+    </option>
+  </component>
+</project>

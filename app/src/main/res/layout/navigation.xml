@@ -160,8 +160,7 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/dp45"
             android:layout_weight="1"
-            android:paddingTop="@dimen/dp2"
-            android:paddingBottom="@dimen/dp2">
+            android:paddingTop="@dimen/dp2">
             <RadioButton
                 android:id="@+id/navigation_tab4"
                 android:layout_width="match_parent"
@@ -169,7 +168,7 @@
                 android:layout_weight="1"
                 android:background="@null"
                 android:button="@null"
-                android:drawableTop="@drawable/navigation_tab3"
+                android:drawableTop="@drawable/navigation_tab4"
                 android:drawablePadding="@dimen/dp3"
                 android:gravity="center"
                 android:text="我的"

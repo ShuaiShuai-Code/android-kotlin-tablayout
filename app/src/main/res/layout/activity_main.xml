@@ -39,7 +39,7 @@
         layout="@layout/navigation"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp45"
-        android:visibility="visible"
+        android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/bnv_menu" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -57,6 +57,6 @@
         app:menu="@menu/menu_bottom_navigation_view"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
-        android:visibility="gone"/>
+        android:visibility="visible"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

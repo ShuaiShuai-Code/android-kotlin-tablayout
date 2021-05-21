@@ -55,8 +55,7 @@ class MainActivity : AppCompatActivity() {
             .subscribe(object : Observer<AVObject> {
                 override fun onSubscribe(disposable: Disposable) {
                 }
-
-                override fun onNext(todo: AVObject) {
+              override fun onNext(todo: AVObject) {
                     // todo 就是 objectId 为 582570f38ac247004f39c24b 的 Todo 实例
                     val name = todo.getString("username")
                     val email = todo.getString("email")
@@ -67,7 +66,9 @@ class MainActivity : AppCompatActivity() {
                     userViewModel.setUser(userBean)
                 }
 
-                override fun onError(throwable: Throwable) {}
+                override fun onError(throwable: Throwable) {
+
+                }
                 override fun onComplete() {
 
                 }
@@ -113,10 +114,36 @@ class MainActivity : AppCompatActivity() {
             }
 
         })
-        iv_fabu_copy.setOnClickListener(View.OnClickListener{
-            Toast.makeText(this,"点击了新增",Toast.LENGTH_SHORT).show()
+        iv_fabu_copy.setOnClickListener(View.OnClickListener {
+            Toast.makeText(this, "点击了新增", Toast.LENGTH_SHORT).show()
         })
 
+        navigation_tab1.setOnClickListener {
+            setNum(bo1 = true, bo2 = false, bo3 = false, bo4 = false);
+        }
+        navigation_tab2.setOnClickListener {
+            setNum(bo1 = false, bo2 = true, bo3 = false, bo4 = false);
+        }
+
+        navigation_tab3.setOnClickListener {
+            setNum(bo1 = false, bo2 = false, bo3 = true, bo4 = false);
+        }
+
+        navigation_tab4.setOnClickListener {
+            setNum(bo1 = false, bo2 = false, bo3 = false, bo4 = true);
+        }
+
+
+    }
+    private  fun initOn(){}
+
+    private fun setNum(bo1: Boolean, bo2: Boolean, bo3: Boolean, bo4: Boolean ) {
+        if (null != navigation_tab1) {
+            navigation_tab1.isChecked = bo1
+            navigation_tab2.isChecked = bo2
+            navigation_tab3.isChecked = bo3
+            navigation_tab4.isChecked = bo4
+        }
     }
 
     override fun onSupportNavigateUp(): Boolean {
