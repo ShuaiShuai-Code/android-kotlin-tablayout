@@ -1,6 +1,7 @@
 package com.fenboshi.fboshi.network.api;
 
 import com.fenboshi.fboshi.network.ApiConstant;
+import com.fenboshi.fboshi.network.Gson.ResponseConverterFactory;
 import com.fenboshi.fboshi.network.interceptor.HeaderInterceptor;
 
 import java.security.KeyManagementException;
@@ -29,7 +30,7 @@ public abstract class ApiCreator {
 
     private static final class RetrofitHolder {
 
-        private static  String BASE_URL = "";
+        private static  String BASE_URL =ApiConstant.BASE_DEBUG_URL;
                //动态设置url
        public  static void  baseUrl(boolean IS_RELEASE_URL){
            BASE_URL=IS_RELEASE_URL? ApiConstant.BASE_RELEASE_URL: ApiConstant.BASE_DEBUG_URL;
@@ -38,7 +39,7 @@ public abstract class ApiCreator {
         private static final Retrofit RETROFIT_CLIENT = new Retrofit.Builder()
                 .baseUrl(BASE_URL)
                 .client(OkHttpHolder.OK_HTTP_CLIENT)
-                .addConverterFactory(GsonConverterFactory.create())
+                .addConverterFactory(ResponseConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .build();
     }

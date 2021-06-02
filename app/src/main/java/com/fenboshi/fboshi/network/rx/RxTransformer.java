@@ -12,7 +12,7 @@ import io.reactivex.schedulers.Schedulers;
 
 public class RxTransformer {
 
-    private static final int SUCCESS = 200;
+    private static final int SUCCESS = 0;
 
     /**
      * 切换到子线程 + 错误处理 + 回调OnError

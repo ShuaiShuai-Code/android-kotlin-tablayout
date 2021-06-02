@@ -19,7 +19,7 @@
         android:theme="@style/AppTheme.NoActionBar"
         tools:node="replace"
         tools:replace="android:allowBackup">
-        <activity android:name=".activity.ContentDetailActivity"></activity>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,6 +27,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.ContentDetailActivity"></activity>
+        <activity android:name=".activity.TaoBaoDetailActivity"></activity>
+
+
     </application>
 
 </manifest>

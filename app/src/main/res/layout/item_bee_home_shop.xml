@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:paddingTop="@dimen/dp12"
+        android:ellipsize="end"
+        android:lines="2"
+        android:text="--"
+        android:textColor="@color/color_black_333333"
+        android:textSize="@dimen/text_size_15" />
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/tv_title"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="2dp"
+        android:text="￥29"
+        android:textColor="@color/color_FF4C29"
+        android:textSize="@dimen/dp19" />
+
+    <TextView
+        android:id="@+id/tv_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp15"
+        android:background="@drawable/background_pay"
+        android:paddingLeft="15dp"
+        android:paddingTop="@dimen/dp3"
+        android:paddingRight="15dp"
+        android:text="购买"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp19" />
+
+</RelativeLayout>

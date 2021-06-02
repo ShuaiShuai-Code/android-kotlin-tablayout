@@ -3,7 +3,7 @@ package com.fenboshi.fboshi.network.exception;
 
 public  class ResponeThrowable extends Exception {
     private int code;
-    private String message;
+    private String msg;
 
     public ResponeThrowable(Throwable throwable, int code) {
         super(throwable);
@@ -16,11 +16,11 @@ public  class ResponeThrowable extends Exception {
 
     @Override
     public String getMessage() {
-        return message;
+        return msg;
     }
 
     public void setMessage(String message) {
-        this.message = message;
+        this.msg = message;
     }
 
 
@@ -28,7 +28,7 @@ public  class ResponeThrowable extends Exception {
     public String toString() {
         return "ResponeThrowable{" +
                 "code=" + code +
-                ", message='" + message + '\'' +
+                ", msg='" + msg + '\'' +
                 '}';
     }
 }

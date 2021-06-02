@@ -103,5 +103,40 @@
     <color name="item_hover">#dbdbdb</color>
     <color name="color_000000">#000000</color>
     <color name="color_ffe6e6e6">#ffe6e6e6</color>
+
+
+    <color name="color_f2f7fc">#F2F7FC</color>
+    <color name="color_c2364b">#C2364B</color>
+    <color name="color_f5455e">#F5455E</color>
+    <color name="color_grey_d0d0d0">#d0d0d0</color>
+    <color name="video_call_peer_close_cameral_text_shadow">#484848</color>
+    <color name="video_call_peer_close_cameral_text_color">#f1f1f1</color>
+    <color name="t_av_chat_setting_bar">#3C4149</color>
+
+    <color name="color_gray_alpha40">#66000000</color>
+    <color name="color_my_030308">#030308</color>
+    <color name="color_808080">#808080</color>
+    <color name="color_black_dedede">#dedede</color>
+    <color name="color_black_707070">#707070</color>
+    <color name="color_black_ebebeb">#ebebeb</color>
+    <color name="color_black_ffdedede">#ffdedede</color>
+    <color name="color_black_fff2f2f2">#fff2f2f2</color>
+    <color name="color_030308">#ff030308</color>
+    <color name="color_ff666666">#ff666666</color>
+    <color name="color_ffcccccc">#ffcccccc</color>
+    <color name="color_ff5039">#ff5039</color>
+    <color name="color_52a6fe">#52a6fe</color>
+    <color name="color_3699FF">#3699FF</color>
+    <color name="color_00b3e6">#00b3e6</color>
+    <color name="color_52A6FE">#52A6FE</color>
+    <color name="color_FFAB00">#FFAB00</color>
+    <color name="color_FF5424">#FF5424</color>
+    <color name="color_FF4C29">#FF4C29</color>
+    <color name="color_FF4E50">#FF4E50</color>
+    <color name="color_FFFFAB00">#38ffab00</color>
+    <color name="color_ff93b8ff">#3893b8ff</color>
+    <color name="color_ff68df00">#3868df00</color>
+    <color name="color_eeeeee">#EEEEEE</color>
+    <color name="color_8c2ff">#8c27ff</color>
 </resources>
 

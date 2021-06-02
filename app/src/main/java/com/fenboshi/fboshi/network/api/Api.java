@@ -1,12 +1,15 @@
 package com.fenboshi.fboshi.network.api;
 
+import com.fenboshi.fboshi.bean.NineGooldsBean;
 import com.fenboshi.fboshi.network.model.NoDataResponse;
 import com.fenboshi.fboshi.network.rx.BaseResponse;
 
 import io.reactivex.Observable;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
+import retrofit2.http.GET;
 import retrofit2.http.POST;
+import retrofit2.http.Query;
 
 public interface Api {
 
@@ -42,7 +45,6 @@ public interface Api {
 //    Observable<BaseResponse<NoDataResponse>> resetLoginPwd(@FieldMap Map<String, Object> map);
 
 
-
     /**
      * 查询订单列表
      */
@@ -66,9 +68,13 @@ public interface Api {
 //    @FormUrlEncoded
 //    Observable<BaseResponse<PagingModel<ProductBean>>> productList(@Field("isUp") int isUp,
 //                                                                   @Field("pageNum") int pageNum);
-
-
-
+    @GET("goods/nine/op-goods-list")
+    Observable<BaseResponse<NineGooldsBean>> getNineGoodsList(@Query("appKey") String appKey,
+                                                              @Query("version") String version,
+                                                              @Query("pageId") String pageid,
+                                                              @Query("pageSize") String pageSize,
+                                                              @Query("nineCid") String nineCid,
+                                                              @Query("sign") String sign);
 
 }
 

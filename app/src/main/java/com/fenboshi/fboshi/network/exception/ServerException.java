@@ -7,11 +7,11 @@ public class ServerException extends RuntimeException {
 
     private int code;
 
-    private String message;
+    private String msg;
 
     public ServerException(int code, String message) {
         this.code = code;
-        this.message = message;
+        this.msg = message;
     }
 
     public int getCode() {
@@ -24,10 +24,10 @@ public class ServerException extends RuntimeException {
 
     @Override
     public String getMessage() {
-        return message;
+        return msg;
     }
 
     public void setMessage(String message) {
-        this.message = message;
+        this.msg = message;
     }
 }

@@ -3,8 +3,8 @@ package com.fenboshi.fboshi.network.rx;
 public class BaseResponse<T> {
 
     private T data;
-    private int retCode;
-    private String errorMsg;
+    private int code;
+    private String msg;
 
     public T getData() {
         return data;
@@ -15,19 +15,19 @@ public class BaseResponse<T> {
     }
 
     public int getRetCode() {
-        return retCode;
+        return code;
     }
 
     public void setRetCode(int retCode) {
-        this.retCode = retCode;
+        this.code = retCode;
     }
 
     public String getErrorMsg() {
-        return errorMsg;
+        return msg;
     }
 
     public void setErrorMsg(String errorMsg) {
-        this.errorMsg = errorMsg;
+        this.msg = errorMsg;
     }
 
 }

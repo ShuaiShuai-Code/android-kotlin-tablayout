@@ -3,23 +3,23 @@ package com.fenboshi.fboshi.network.model;
 
 public class NoDataResponse {
 
-    private int retCode;
+    private int code;
 
-    private String errorMsg;
+    private String msg;
 
     public int getCode() {
-        return retCode;
+        return code;
     }
 
     public void setCode(int retCode) {
-        this.retCode = retCode;
+        this.code = retCode;
     }
 
     public String getMsg() {
-        return errorMsg;
+        return msg;
     }
 
     public void setMsg(String errorMsg) {
-        this.errorMsg = errorMsg;
+        this.msg = errorMsg;
     }
 }

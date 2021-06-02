@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle" >
+            <solid android:color="#ff58bb52" />
+            <!--设置渐变色 angle=0 从左到右渲染，angle=90从上到下渲染，angle=180 从右到左渲染，-->
+            <gradient
+                android:angle="0"
+                android:startColor="#FF4E50"
+                android:endColor="#F97423" />
+            <!--设置角的弧度-->
+            <corners android:radius="5dp" />
+            <!--设置边框以及弧度-->
+<!--            <stroke-->
+<!--                android:width="1dp"-->
+<!--                android:color="#000000" />-->
+        </shape>
+    </item>
+
+    <item  android:state_pressed="true">
+        <shape>
+            <!--点击之后的颜色-->
+<!--            <solid android:color="#fff000"/>-->
+            <!--设置角的弧度-->
+            <corners android:radius="5dp"/>
+<!--            &lt;!&ndash;点击之后的边框&ndash;&gt;-->
+<!--            <stroke-->
+<!--                android:width="1dp"-->
+<!--                android:color="#000000"/>-->
+        </shape>
+    </item>
+</selector>

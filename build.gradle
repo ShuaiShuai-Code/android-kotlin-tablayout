@@ -25,6 +25,9 @@ allprojects {
         jcenter()
         mavenCentral() // add repository
         jcenter{url "http://jcenter.bintray.com/"}
+        maven {
+            url "http://repo.baichuan-android.taobao.com/content/groups/BaichuanRepositories/"
+        }
     }
 }
 

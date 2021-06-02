@@ -11,14 +11,14 @@
         android:id="@+id/learnFragment"
         android:enabled="true"
         android:icon="@drawable/main_02"
-        android:title="课堂"
+        android:title="商城"
         android:visible="false"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/lookFragment"
         android:enabled="true"
         android:icon="@drawable/main_03"
-        android:title="头条"
+        android:title="商城"
         android:tooltipText="14sp"
         app:showAsAction="ifRoom" />
     <item
