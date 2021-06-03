@@ -16,7 +16,7 @@
         android:background="@color/white"/>
 
     <ImageView
-        android:id="@+id/img_shop"
+        android:id="@+id/img_my_shop"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp375"
         android:background="@color/gray_e5"
@@ -51,7 +51,7 @@
         android:textSize="@dimen/dp15"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_shop" />
+        app:layout_constraintTop_toBottomOf="@+id/img_my_shop" />
 
     <TextView
         android:id="@+id/tv_title"

@@ -9,12 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.bumptech.glide.Glide
 import com.fenboshi.fboshi.R
-import com.fenboshi.fboshi.network.api.ApiCreator
-import com.fenboshi.fboshi.network.exception.ResponeThrowable
-import com.fenboshi.fboshi.network.rx.BaseObserver
-import com.fenboshi.fboshi.network.rx.RxTransformer
 import com.fenboshi.fboshi.util.ToTaobaoUtils
-import io.reactivex.android.schedulers.AndroidSchedulers
 import kotlinx.android.synthetic.main.content_tao_bao_detail.*
 
 import java.math.BigDecimal
@@ -31,6 +26,7 @@ class TaoBaoDetailActivity : AppCompatActivity() {
 
 
     private var outside_url: String = ""
+    private var pic: String = ""
     private var pid: String = ""
     private var cname: String = ""
     private lateinit var money: BigDecimal
@@ -42,6 +38,8 @@ class TaoBaoDetailActivity : AppCompatActivity() {
         pid = intent.getStringExtra("pid")
         cname = intent.getStringExtra("cname")
         outside_url = intent.getStringExtra("outside_url")
+        pic = intent.getStringExtra("pic")
+        Glide.with(this@TaoBaoDetailActivity).load(pic).into(img_my_shop)
 
     }
 

@@ -49,7 +49,7 @@ class HomeBeeShopAdapter(private val context: FragmentActivity, var listItem: Li
             if (MoreCheckError.isFastClick()) {
                     val intent = Intent()
                     intent.setClass(context, TaoBaoDetailActivity::class.java)
-                    intent.putExtra("outside_url", goolist.id)
+                    intent.putExtra("outside_url", goolist.goodsId)
                     intent.putExtra("pid", pid)
                     intent.putExtra("cname", cname)
                     intent.putExtra("pic", goolist.marketingMainPic)
